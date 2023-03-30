@@ -56,7 +56,7 @@ export default class App extends Component {
               <Text style={{fontSize:30,color:'darkred',textAlign:'center'}}>
                 {item.film_cim}
               </Text>
-              <Image   source={{uri:'http://192.168.6.10:3000/'+item.kep}} style={{width:300,height:300,alignSelf:'center'}}   />
+              <Image   source={{uri:IP.ipcim+item.kep}} style={{width:300,height:300,alignSelf:'center'}}   />
               <TouchableOpacity
           style={styles.button}
           onPress={async ()=>this.filmvalaszto(item.id)}
